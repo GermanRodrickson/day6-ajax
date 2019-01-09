@@ -10,9 +10,16 @@
 <body>
 
   <section class="wrapper">
-    <input type="text" class="search" id="input-search" placeholder="City or State">
+    <input type="text" class="search" id="input-search" placeholder="City or State" oninput="showValue()">
   </section>
   
   <script src="index.js"></script>
+  <script>
+    function showValue() {
+        const inputSearch = document.getElementById("input-search").value;
+
+        console.log(inputSearch);
+      }
+  </script>
 </body>
 </html>
